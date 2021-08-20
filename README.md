@@ -31,19 +31,20 @@ Copy the example-vars.json file in windows10base and winserver2019 to vars.json 
 used for lab services.
 
 If not already done, build the Image Gallery and pre-stage image:
+`
 
-	cd terraformSIG
-	terraform init
-	terraform plan
-	terraform apply
-    cd ..
+  `cd terraformSIG`
+  `terraform init`
+  `terraform plan`
+  `terraform apply`
+  `cd ..`
 
 Build images with Packer:
 
- cd windows10ase
- packer build --force --var-file=vars.json win10base.json
- cd ../winserver2019
- packer build --force --var-file=vars.json winserver2019.json
+  `cd windows10base`
+  `packer build --force --var-file=vars.json win10base.json`
+  `cd ../winserver2019`
+  `packer build --force --var-file=vars.json winserver2019.json`
 
 ## Nested Virtualisation on the Server Image
 
