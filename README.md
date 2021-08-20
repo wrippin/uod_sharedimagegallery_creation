@@ -33,18 +33,18 @@ used for lab services.
 If not already done, build the Image Gallery and pre-stage image:
 `
 
-  `cd terraformSIG`
-  `terraform init`
-  `terraform plan`
-  `terraform apply`
-  `cd ..`
+    `cd terraformSIG`
+    `terraform init`
+    `terraform plan`
+    `terraform apply`
+    `cd ..`
 
 Build images with Packer:
 
-  `cd windows10base`
-  `packer build --force --var-file=vars.json win10base.json`
-  `cd ../winserver2019`
-  `packer build --force --var-file=vars.json winserver2019.json`
+    `cd windows10base`
+    `packer build --force --var-file=vars.json win10base.json`
+    `cd ../winserver2019`
+    `packer build --force --var-file=vars.json winserver2019.json`
 
 ## Nested Virtualisation on the Server Image
 
